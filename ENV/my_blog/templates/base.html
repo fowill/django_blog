@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fowill's Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <ol class="breadcrumb">
+        <li><a href='/'>首页</a></li>
+        <li class="active">完善ing</li>
+      </ol>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Fowill's Blog</h1>
+        <p class="lead blog-description">长路漫漫，且行且歌。</p>
+        <!--img src="https://how2j.cn/example.gif" class="img-rounded"-->
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          {% block content %}
+          {% endblock %}
+
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset",>
+            <h4>About</h4>  
+            <p class="bg-info">欢迎来到我的博客，希望能够保持更新，保持进步！</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Today in history</h4>  
+            <iframe src="http://www.todayonhistory.com/code/6.html?w=400&h=30&bky=dotted&bks=1&bkc=#CFCFCF&fs=14&fc=#565656&hg=30&ie=0&xhx=none&sd=2000&px=3&len=0&sk=1&n=0" width="263" height="30" scrolling="no" frameborder="0" allowtransparency="true"  style="border: 1px dotted #CFCFCF" class="bg-info"></iframe>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/fowill">有GitHub，挺有必要</a></li>
+              <li><a>有Twitter，但没必要</a></li>
+              <li><a>有Facebook，但没必要</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <p>Written by wly, created with <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://www.djangoproject.com/">Django.</p>
+    </nav>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
